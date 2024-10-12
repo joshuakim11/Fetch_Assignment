@@ -1,6 +1,5 @@
 import math
 import os
-import time
 import schedule
 import signal
 import Endpoint_Helper
