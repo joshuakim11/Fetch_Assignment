@@ -58,6 +58,6 @@ if __name__ == "__main__":
     keys = hostnameDict.keys()
     #Loop every 15 seconds until exit command is input.
     schedule.every(15).seconds.do(looper_script,endpoints,keys)
-
+    looper_script(endpoints, keys) #inital run, then run every 15 seconds.
     while True:
         schedule.run_pending()
