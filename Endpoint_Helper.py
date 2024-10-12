@@ -1,6 +1,5 @@
 import yaml
 import requests
-import time
 from urllib.parse import urlparse
 from Endpoint import Endpoint
 
