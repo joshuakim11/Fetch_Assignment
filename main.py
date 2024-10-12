@@ -1,4 +1,3 @@
-import math
 import os
 import schedule
 import signal
@@ -25,7 +24,7 @@ def looper_script(endpoints,keys):
         else:
             hostnameDict[hostname]["total"] = hostnameDict[hostname]["total"] + 1
     for key in keys:
-        percentage = math.floor(hostnameDict[key]["success"]/hostnameDict[key]["total"] * 100)
+        percentage = round(hostnameDict[key]["success"]/hostnameDict[key]["total"] * 100)
         print("%s%s%d%s" % (key," has ",percentage,"% availability percentage"))
     print("----------------------------------------------------")
 
